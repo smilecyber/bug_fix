@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class QuizApplication {
     // quiz application
+    // there are some problems with sum of rigt and wrong answers
+    // also there might be problem with the answers provided by application
+
     public static void main(String[] args) {
-        // ???
         String question1 = "What is boolean default value? (True=1/False=0)";
         String question2 = "What is int max positive value?";
         String question3 = "if statement can have empty body (Y=1/N=0)";
@@ -32,12 +34,8 @@ public class QuizApplication {
         }
         wrongAnswerCount++;
 
-        // int in max value gir
-        if (answer2==2145382641){
-            wrongAnswerCount++;
-        }else {
+        if (answer2 != 2147483647) {
             rightAnswerCount++;
-            wrongAnswerCount++;
         }
         if (answer3 == 1){
             rightAnswerCount++;
