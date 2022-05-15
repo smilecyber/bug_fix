@@ -54,7 +54,7 @@ public class BankSimulation {
             account2Balance -= amount;
             account1Balance += amount;
         }
-        System.out.println(account1Balance);
-        System.out.println(account2Balance);
+        System.out.println("After transfer account1 balance: " +account1Balance);
+        System.out.println("After transfer account2 balance: " +account2Balance);
     }
 }
