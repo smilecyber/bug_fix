@@ -30,7 +30,7 @@ public class Train {
         String flight2 = "FL002";
         String flight3 = "FL003";
 
-        if (!(from.equalsIgnoreCase("Berlin") || destination.equalsIgnoreCase("Amsterdam"))) {
+        if (!(from.equalsIgnoreCase("Berlin") && destination.equalsIgnoreCase("Amsterdam"))) {
             System.out.println("For now, we can only serve you Berlin-Amsterdam transportation. Please check your destinations");
             return;
         }
