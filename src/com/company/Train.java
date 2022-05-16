@@ -31,7 +31,7 @@ public class Train {
         String flight3 = "flight3 20:15 AM 78$";
 
         if (!(from.equalsIgnoreCase("Berlin") || destination.equalsIgnoreCase("Amsterdam"))) {
-            System.out.println("Couldn't find any transportation option for you, please check your filters and retry.");
+            System.out.println("For now, we can only serve you Berlin-Amsterdam transportation. Please check your destinations");
             return;
         }
         switch (transportType) {
