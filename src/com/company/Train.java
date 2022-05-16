@@ -71,6 +71,27 @@ public class Train {
                             + flight2 + ", " + flight3 );
                 }
                 break;
+            case 0:
+                if (nonStop && hasBag) {
+                    System.out.println("You can  take " + train3 + ", " + bus1 + ", "
+                            + bus1 + ", " + bus3 ) ;
+                    return;
+                }
+                if (!nonStop && hasBag) {
+                    System.out.println("You can only take " + flight1 + ", " + train4 +", " + bus1 + ", "
+                            + bus1 + ", " + bus3 );
+                    return;
+                } else if (nonStop) {
+                    System.out.println("You can take " + flight2 +", " + bus1 + ", "
+                            + bus1 + ", " + bus3 );
+                    return;
+                } else {
+                    System.out.println("You can take " + flight1 + ", "
+                            + flight2 + ", " + flight3 +", " +train1 + ", "
+                            + train2 + ", " + train3 + ", " + train4 +", " + bus1 + ", "
+                            + bus1 + ", " + bus3 );
+                }
+                break;
         }
     }
 
