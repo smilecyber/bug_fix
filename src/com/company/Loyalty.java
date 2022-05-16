@@ -18,21 +18,9 @@ public class Loyalty {
 
         System.out.println("Please select the deal that you would like attend");
         int dealId = scanner.nextInt();
-       // bug 1
-//        if (!(dealId == 1 || dealId == 2 || dealId == 3)){
-//            System.out.println("You have entered invalid dealId");
-//            return;
-//        }
+
         System.out.println("Please enter item count you would like to buy: ");
         int count = scanner.nextInt();
-        // bug 2 check item count greater than zero and item count
-
-//       if (itemCount < count){
-//         System.out.println("not sufficient stock:");
-//       }
-
-
-        // bug 3
 
         int advicedDealId= 0;
         double amountWithSelectedDeal= 0;
