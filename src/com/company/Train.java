@@ -10,7 +10,7 @@ public class Train {
         boolean hasBag = scanner.nextBoolean();
         System.out.println("Direct transport only? (Yes:true, No:false)");
         boolean nonStop = scanner.nextBoolean();
-        System.out.println("Is there choice transport type ? (Train:1, Bus:2, Flight:3, If there is no filter:0) ");
+        System.out.println("Is there choice transport type ? (Train:1, Bus:2, Flight:3) ");
         int transportType = scanner.nextInt();
 
         System.out.println("From: ");
@@ -71,26 +71,8 @@ public class Train {
                             + flight2 + ", " + flight3 );
                 }
                 break;
-            case 0:
-                if (nonStop && hasBag) {
-                    System.out.println("You can  take " + train3 + ", " + bus1 + ", "
-                            + bus1 + ", " + bus3 ) ;
-                    return;
-                }
-                if (!nonStop && hasBag) {
-                    System.out.println("You can only take " + flight1 + ", " + train4 +", " + bus1 + ", "
-                            + bus1 + ", " + bus3 );
-                    return;
-                } else if (nonStop) {
-                    System.out.println("You can take " + flight2 +", " + bus1 + ", "
-                            + bus1 + ", " + bus3 );
-                    return;
-                } else {
-                    System.out.println("You can take " + flight1 + ", "
-                            + flight2 + ", " + flight3 +", " +train1 + ", "
-                            + train2 + ", " + train3 + ", " + train4 +", " + bus1 + ", "
-                            + bus1 + ", " + bus3 );
-                }
+            default:
+                System.out.println("You have to pick 1 transportation Type");
                 break;
         }
     }
