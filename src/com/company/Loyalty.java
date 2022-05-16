@@ -21,13 +21,21 @@ public class Loyalty {
         if (!(dealId == 1 || dealId == 2 || dealId == 3)){
             System.out.println("You have entered invalid dealId");
             return;
+        }else {
+            System.out.println("You have entered wrong dealId. Please try again");
+            dealId = scanner.nextInt();
+
         }
         System.out.println("Please enter item count you would like to buy: ");
         int count = scanner.nextInt();
-
+        if (count < 3){
+            System.out.println("to receive the deal you need to purchase at least 3 item");
+        }
        if (itemCount < count){
          System.out.println("not sufficient stock:");
        }
+
+
         double customerCartTotal = itemPrice * count;
 
 
