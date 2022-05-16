@@ -19,16 +19,16 @@ public class Train {
         System.out.println("To: ");
         String destination = scanner.next();
 
-        String train1 = "train1 10:30 AM 25 $";
-        String train2 = "train2 11:40 AM 40 $";
-        String train3 = "train3 1:15 PM 55 $";
-        String train4 = "train4 3:25 PM 23 $";
-        String bus1 = "bus1 07:15 AM 22$";
-        String bus2 = "bus1 08:20 AM 8$";
-        String bus3 = "bus1 09:05 AM 13$";
-        String flight1 = "flight1 04:05 AM 62$";
-        String flight2 = "flight2 06:30 AM 97$";
-        String flight3 = "flight3 20:15 AM 78$";
+        String train1 = "TR001";
+        String train2 = "TR002";
+        String train3 = "TR003";
+        String train4 = "TR004";
+        String bus1 = "BS001";
+        String bus2 = "BS002";
+        String bus3 = "BS003";
+        String flight1 = "FL001";
+        String flight2 = "FL002";
+        String flight3 = "FL003";
 
         if (!(from.equalsIgnoreCase("Berlin") || destination.equalsIgnoreCase("Amsterdam"))) {
             System.out.println("For now, we can only serve you Berlin-Amsterdam transportation. Please check your destinations");
